@@ -1,12 +1,14 @@
-=  Architecture
+=  Reference & Tools
 
-== Components
+==  Reference Architecture
+
+=== Components
 
 The new Application Platform, designed to support our applications in the future, consists of a couple major components, described in the following high level architecture.
 
 image::hlarch.png[High Level Component Architecture, 100%, 100%]
 
-== Pipeline as code deployment model (Update 2/2025)
+=== Pipeline as code deployment model (Update 2/2025)
 
 Last year our company, "CustomerFirst,Ltd", went through a global IT Automation program.
 The Automated Cloud Application Lifecycle (ACAL) project was initiated to tackle the automation of the containerized applications.
@@ -15,7 +17,36 @@ This model is the result of the combined work of the Platform Engineering and Ap
 
 image::automation.jpg[Automation Design, 100%, 100%]
 
-== Pipeline rules
+=== Pipeline rules
 A corporate-compliant Pipeline shall respect the following structure and tasks scope:
 
 image::pipeline.jpg[Pipeline Design, 100%, 100%]
+
+
+
+== Required tools & documentation
+
+=== Tools
+
+* **Base64 decoder (Mission 2)**
+====
+You can use any Base64 decoder you like, or pick one from this list:
+https://www.base64decode.org/[Base64 decoder (Mission 2)^]
+====
+
+* **REST Client (Mission 4)**
+====
+You can use any REST client you like to perform the required HTTP calls, or pick one from this list:
+* https://curl.se/download.html[Local client - cUrl^]
+* https://httpie.io/cli[Local client - HTTPie-cli^]
+* https://httpie.io/download[Local client - HTTPie-desktop^]
+* https://httpie.io/app[Online client - HTTPie^]
+* https://hoppscotch.io/[Online client - Hoppscotch^]
+* https://reqbin.com/[Online client - Reqbin (limited use)^]
+====
+
+
+=== Documentation 
+====
+* {doc_openshift_api}[Openshift API Reference^]
+====

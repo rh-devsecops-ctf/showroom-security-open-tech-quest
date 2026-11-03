@@ -1,2 +1,2 @@
-* xref:module-01.adoc[Missions]
-* xref:module-02.adoc[Architecture]
+* xref:module-01.adoc[Mission Briefing]
+* xref:module-02.adoc[Reference & Tools]

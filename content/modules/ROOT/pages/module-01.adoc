@@ -1,5 +1,7 @@
 = Mission Briefing
 
+== The scenario
+
 Welcome to the Security Task Force; please have a seat!
 
 A critical security alert was raised by the NS team (Network & Security team). 
@@ -15,35 +17,36 @@ Your objective, as a DevSecOps expert, is to trace back the actions taken by the
 
 Use the available tools to investigate. A tool is never used twice to solve a mission.
 
-= Starting your missions
-Login to the CTF Dashboard, where you'll be able to see your mission objectives and to post your responses.
-Each correct answer will complete the current mission and unlock the next one.
+= Getting Started
+
+Login to the CTF Dashboard, where you’ll be able to see your mission objectives and to post your responses. Each correct answer will complete the current mission and unlock the next one.
+
+== Your environment
+
+Your environment includes:
+
+* OpenShift cluster (version 4.20)
+* Red Hat Advanced Cluster Security (ACS)
+* OpenShift Gitops (ArgoCD)
+* OpenShift Pipelines (Tekton)
+* Gitea source code repository
+* Quarkus-based application
 
 
+== Accessing your environment
+
+* **OpenShift** -- Login to the Openshift Web Console with RH SSO
 ====
-https://ctfd-leaderboard.{openshift_cluster_ingress_domain}/challenges[CTF Dashboard^]
-
-username: {user}
-
-password: {password}
-
-====
-
-
-= Lab access
-
-====
-Login to the Openshift Web Console with RH SSO
-
 https://{console_url}[Openshift Console^]
 
 username: {user}
 
 password: {password} 
+====
 
 
-Login to ACS with Openshift SSO integration
-
+* **Advanced Cluster Security** -- Login to ACS with Openshift SSO integration
+====
 https://central-stackrox.{openshift_cluster_ingress_domain}[Advanced Cluster Security for Kubernetes^]
 
 username: {user}
@@ -52,9 +55,9 @@ password: {password}
 
 ====
 
-====
-Login to Openshift Gitops with the local authentication provider (NOT with Openshift SSO integration)
 
+* **OpenShift Gitops** -- Login to Openshift Gitops with the local authentication provider (NOT with Openshift SSO integration)
+====
 https://openshift-gitops-server-openshift-gitops.{openshift_cluster_ingress_domain}[Openshift GitOps (ArgoCD)^]
 
 username: {user}
@@ -63,22 +66,10 @@ password: {password}
 
 ====
 
+
+* **Gitea** -- Source code repository
 ====
 
 {gitea_console_url}/gitea/customers-app.git[Source Code of the customers application^]
 
 ====
-
-
-== Required utilities
-====
-https://www.base64decode.org/[Base64 decoder (Challenge 2)^]
-
-https://reqbin.com/[REST Client (Challenge 4)^] 
-====
-
-== Documentation
-====
-{doc_openshift_api}[Openshift API Reference^]
-====
-
