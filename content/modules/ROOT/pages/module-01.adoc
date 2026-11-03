@@ -25,7 +25,7 @@ Login to the CTF Dashboard, where you’ll be able to see your mission objective
 
 Your environment includes:
 
-* OpenShift cluster (version 4.20)
+* OpenShift cluster
 * Red Hat Advanced Cluster Security (ACS)
 * OpenShift Gitops (ArgoCD)
 * OpenShift Pipelines (Tekton)
