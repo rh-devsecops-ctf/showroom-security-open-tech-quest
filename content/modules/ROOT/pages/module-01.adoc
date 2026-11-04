@@ -17,7 +17,7 @@ Your objective, as a DevSecOps expert, is to trace back the actions taken by the
 
 Use the available tools to investigate. A tool is never used twice to solve a mission.
 
-= Getting Started
+== Getting Started
 
 Login to the CTF Dashboard, where you’ll be able to see your mission objectives and to post your responses. Each correct answer will complete the current mission and unlock the next one.
 
@@ -33,7 +33,7 @@ Your environment includes:
 * Quarkus-based application
 
 
-== Accessing your environment
+=== Accessing your environment
 
 * **OpenShift** -- Login to the Openshift Web Console with RH SSO
 ====
@@ -52,7 +52,6 @@ https://central-stackrox.{openshift_cluster_ingress_domain}[Advanced Cluster Sec
 username: {user}
 
 password: {password} 
-
 ====
 
 
@@ -63,7 +62,6 @@ https://openshift-gitops-server-openshift-gitops.{openshift_cluster_ingress_doma
 username: {user}
 
 password: {password} 
-
 ====
 
 
@@ -71,5 +69,4 @@ password: {password}
 ====
 
 {gitea_console_url}/gitea/customers-app.git[Source Code of the customers application^]
-
 ====
