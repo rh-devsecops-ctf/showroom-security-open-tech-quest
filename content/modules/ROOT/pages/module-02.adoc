@@ -28,7 +28,7 @@ image::pipeline.jpg[Pipeline Design, 100%, 100%]
 
 === Tools
 
-* **Base64 decoder (Mission 2)**
+* **Base64 decoder (needed for mission 2)**
 ====
 You can use any Base64 decoder you like, or pick one from this list:
 
@@ -42,7 +42,7 @@ You can use any Base64 decoder you like, or pick one from this list:
 
 ====
 
-* **REST Client (Mission 4)**
+* **REST Client (needed for mission 4)**
 ====
 You can use any REST client you like to perform the required HTTP calls, or pick one from this list:
 
